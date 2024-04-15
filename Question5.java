@@ -27,6 +27,22 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    int listCount = in.nextInt();
+
+    ArrayList<Integer> arrayList = new ArrayList<>();
+
+    for(int i = 0; i < num; i ++)
+    {
+      int num = in.nextInt();
+      arrayList.add(num);
+    }
+
+    for(int numCheck: arrayList)
+    {
+      for(int num: arrayList)
+      {
+        if (numCheck = num)
+      }
+    }
   }
 }
