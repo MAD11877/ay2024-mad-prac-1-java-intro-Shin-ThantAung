@@ -25,7 +25,6 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-
     Scanner in = new Scanner(System.in);
     int num = in.nextInt();
     int[] arr = new int[num];
