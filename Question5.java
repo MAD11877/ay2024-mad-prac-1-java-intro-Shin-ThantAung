@@ -25,24 +25,34 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
-    Scanner in = new Scanner(System.in);
-    int listCount = in.nextInt();
 
-    ArrayList<Integer> arrayList = new ArrayList<>();
+    Scanner in = new Scanner(System.in);
+    int num = in.nextInt();
+    int[] arr = new int[num];
 
     for(int i = 0; i < num; i ++)
     {
-      int num = in.nextInt();
-      arrayList.add(num);
+      int integer = in.nextInt();
+      arr[i]=integer;
     }
-
-    for(int numCheck: arrayList)
+    int maxCount = 0;
+    int mode = 0;
+    
+    for(int i =0; i < arr.length; i++)
     {
-      for(int num: arrayList)
+      int currentCount = 0;
+      for(int j = 0; j < arr.length; j++)
       {
-        if (numCheck = num)
+        if (arr[i] == arr[j]){
+          currentCount++;
+        }
+      }
+      if(currentCount > maxCount)
+      {
+        maxCount = currentCount;
+        mode = arr[i];
       }
     }
+    System.out.println(mode);
   }
 }
