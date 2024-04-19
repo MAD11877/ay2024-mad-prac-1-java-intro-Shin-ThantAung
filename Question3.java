@@ -11,12 +11,8 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in);
-
-    System.out.println("Enter an integer: ");
     int integer = in.nextInt();
-
     integer = integer * integer;
-
-    System.out.println("The square of the input is "+integer);
+    System.out.println(integer);
   }
 }
